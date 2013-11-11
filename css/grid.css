@@ -317,10 +317,10 @@ body, html {
 		height:140px;}
 
 	.hidden-mobile{
-		display:none !important; }
+		display:none; }
 
 		.visible-mobile{
-		display:inherit !important;}
+		display:inherit;}
 
 		}
 
@@ -352,10 +352,10 @@ body, html {
 		width:100%;
 		height:140px;}
 	.hidden-mobile{
-		display:none !important; }
+		display:none; }
 
 		.visible-mobile{
-		display:inherit !important;}
+		display:inherit;}
 
 
 		}
