@@ -36,7 +36,7 @@ $(function() {
 
             $(".parallax").each(function (index, element) {
                 var offset = $(this).offset().top;
-                $(this).css("background-position", "50% " + (scrollTop - offset) / 2 + "px");
+                $(this).css("background-position", "50% " + (scrollTop - offset) / 8 + "px");
             });
         }
     });
