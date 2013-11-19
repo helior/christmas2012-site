@@ -162,7 +162,7 @@ nav ul li a {
 	width: auto;
 	height: auto;
 	z-index: -1000;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	background:#000;
 	transform: translate(0px,0px);
 	-ms-transform: translate(0px,0px); /* IE 9 */
@@ -277,4 +277,10 @@ nav ul li a {
 #track8 {background-color: teal;}
 #track9 {
 	background-image: url(../images/child-of-christmas.jpg);
+	color:#fff;
+}
+
+#track11 {
+	background-image: url(../images/lights.jpg);
+	color:#fff;
 }
