@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
 @import "css/grid.css";
-@import "css/font-awesome.min.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css";
 @import "css/main.css";
