@@ -1,0 +1,12 @@
+{
+  "name": "christmas2013-site",
+  "version": "0.1.0",
+  "main": "js/main.js",
+  "ignore": ["node_modules"],
+  "devDependencies": {
+    "angular": "~1.2.0",
+    "angular-audio-playlist": "~0.2.0",
+    "jquery.stellar": "~0.6.2",
+    "angularjs-stellar": "*"
+  }
+}

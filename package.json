@@ -8,10 +8,6 @@
   "author": {
     "name": "Helior Colorado"
   },
-  "dependencies": {
-  	"angular": "1.2.0",
-  	"angular-audio-player": "git://github.com/mrgamer/angular-audio-player.git"
-  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.3",
