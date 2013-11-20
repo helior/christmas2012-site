@@ -62,9 +62,9 @@
 
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
 
-		<div ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: audioPlayer.playing && audioPlayer.currentTrack-1 === $index}">
+		<div class="track" ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: audioPlayer.playing && audioPlayer.currentTrack-1 === $index}">
 			<div class="spacer30"></div>
-			<h3 ng-click="audioPlayer.playPause($index)">{{track.title}}</h3>
+			<h2 ng-click="audioPlayer.playPause($index)">{{track.title}}</h2>
 			<div class="spacer30"></div>
 		</div>
 
@@ -75,6 +75,8 @@
 		<script src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 		<script type="text/javascript" src="bower_components/angular-audio-playlist/dist/angular-audio-player.min.js"></script>
+		<!-- <script type="text/javascript" src="bower_components/jquery.stellar/src/jquery.stellar.js"></script> -->
+		<!-- <script type="text/javascript" src="bower_components/angularjs-stellar/js/stellar.directives.js"></script> -->
 		<!-- <script src="js/jquery.fitvids.js"></script> -->
 		<script src="js/main.js"></script>
 	</body>
