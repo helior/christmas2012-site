@@ -102,7 +102,6 @@ $(function() {
 	});
 
   $('#nav').onePageNav({
-    currentClass: '',
     changeHash: false,
     scrollSpeed: 1500,
     scrollOffset: 30,

@@ -22,9 +22,9 @@
 	    </div>
 
 	    <nav class="span14 pull-right text-right visible-mobile mobilenav">
-	     	<ul id="nav2">
-	     		<li ng-repeat="track in playlist"><a href="#track{{$index+1}}">{{track.title}}</a></li>
-	     	</ul>
+				<ul id="nav">
+					<li ng-repeat="track in playlist"><a href="#track{{$index+1}}" ng-click="audioPlayer.playPause($index)">{{track.title}}</a></li>
+				</ul>
 			</nav>
 		</header>
 
