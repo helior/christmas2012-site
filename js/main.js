@@ -13,49 +13,49 @@ christmasApp.constant('playlist', [
     {
       'title': 'Tea Time Poetry — Christmas Special Pt. 1',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/christmas-special-1.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'Commercial Break: Chief Running Buffalo Used Cars & Trees',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/chief-running-buffalo-used-cars-trees.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'Tea Time Poetry — Christmas Special Pt. 2',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/christmas-special-2.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'Rudolf The Red Nose Raindeer',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/rudolf-the-red-nose-raindeer.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'All in One - Christmas Greeting',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/christmas-greeting.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'All in One - Baby Christmas Baby',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/baby-christmas-baby.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'TH...G - Black Friday',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/black-friday.mp3',
       'type': 'audio/mpeg'
     },
@@ -69,14 +69,14 @@ christmasApp.constant('playlist', [
     {
       'title': 'Helior Colorado - California Christmas',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/california-christmas.mp3',
       'type': 'audio/mpeg'
     },
     {
       'title': 'The Guys - Frosty The Snow Man (Drunk Mix)',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/frosty-the-snowman.mp3',
       'type': 'audio/mpeg'
     },
@@ -115,7 +115,7 @@ $(function() {
     var scrollTop = $(window).scrollTop();
     var minusscrollTop = ($(window).scrollTop() * -1);
 
-    if ($(document).width() >= 1100) {
+    if ($(document).width() >= 500) {
       $('#video_background').css('transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
       $('#video_background').css('-ms-transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
       $('#video_background').css('-webkit-transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
