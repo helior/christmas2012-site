@@ -6,8 +6,8 @@ christmasApp.constant('playlist', [
     {
       'title': 'Carol of the Bells',
       'image': 'path/to/file.jpg',
-      'parallax': false,
-      'src': 'files/carol-of-the-bells.mpg',
+      'parallax': true,
+      'src': 'files/carol-of-the-bells.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -62,7 +62,7 @@ christmasApp.constant('playlist', [
     {
       'title': 'Commercial Break: Crazy Ivanoff Vodka Milk Eggnog',
       'image': 'path/to/file.jpg',
-      'parallax': false,
+      'parallax': true,
       'src': 'files/crazy-ivanoff-vodka-milk-eggnog.mp3',
       'type': 'audio/mpeg'
     },
@@ -84,14 +84,14 @@ christmasApp.constant('playlist', [
 
 christmasApp.controller('christmasAudioController', function($scope,playlist) {
   $scope.playlist = playlist;
-    // $scope.audioPlaylist = playlist.map(function(song, index, array) {
-    //     return {
-    //         src: song.src,
-    //         type: song.type,
-    //         artist: song.artist,
-    //         title: song.title
-    //     };
-    // });
+  $scope.audioPlaylist = playlist.map(function(song, index, array) {
+      return {
+          src: song.src,
+          type: song.type,
+          artist: "The Christmas Time Band",
+          title: song.title
+      };
+  });
 });
 
 
