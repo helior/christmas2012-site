@@ -102,19 +102,14 @@ $(function() {
 	});
 
   $('#nav').onePageNav({
-    currentClass: 'active',
-    changeHash: true,
-    scrollSpeed: 1000,
-    scrollOffset: 0,
-    easing: 'easeInOutExpo'
-  });
-
-  $('#nav2').onePageNav({
-    currentClass: 'active',
+    currentClass: '',
     changeHash: false,
     scrollSpeed: 1500,
     scrollOffset: 30,
-    easing: 'easeInOutExpo'
+    easing: 'easeInOutExpo',
+    begin: function() {
+      $('.mobilenav').slideToggle();
+    }
   });
 
   $(window).scroll(function () {
