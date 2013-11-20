@@ -267,6 +267,23 @@ nav ul li a {
 	background-size: cover;
 }
 
+.track-inner {
+	height:100%;
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.track-inner:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.track.active .track-inner {
+	background-color: rgba(0,0,0,0);
+}
+
 @media (max-width:979px) {
 	.track {
 		height:350px;

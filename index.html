@@ -63,9 +63,11 @@
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
 
 		<div class="track" ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: audioPlayer.playing && audioPlayer.currentTrack-1 === $index}">
-			<div class="spacer30"></div>
-			<h2 ng-click="audioPlayer.playPause($index)">{{track.title}}</h2>
-			<div class="spacer30"></div>
+			<div class="track-inner">
+				<div class="spacer30"></div>
+				<h2 ng-click="audioPlayer.playPause($index)">{{track.title}}</h2>
+				<div class="spacer30"></div>
+			</div>
 		</div>
 
 
