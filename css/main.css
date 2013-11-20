@@ -253,7 +253,7 @@ nav ul li a {
 
 @media (max-width: 480px){}
 
-@media (min-width: 480px)and (max-width: 1070px){}
+@media (min-width: 480px) and (max-width: 1070px){}
 
 
 .footer a{
@@ -261,23 +261,26 @@ nav ul li a {
 	text-decoration:none;
 }
 
-#track1 {background-color: green;}
-#track2 {background-color: red;}
-#track3 {
-	background-image:url(../images/city.jpg);
-	color:#fff;
-}
-#track4 {background-color: pink;}
-#track5 {background-color: orange;}
-#track6 {background-color: olive;}
-#track7 {background-color: grey;}
-#track8 {background-color: teal;}
-#track9 {
-	background-image: url(../images/child-of-christmas.jpg);
-	color:#fff;
+.track {
+	height:500px;
+	background-position:center center;
+	background-size: cover;
 }
 
-#track11 {
-	background-image: url(../images/lights.jpg);
-	color:#fff;
+@media (max-width:979px) {
+	.track {
+		height:350px;
+	}
 }
+
+#track1 {background-image:url(../images/mexican-parade.jpg);}
+#track2 {background-image:url(../images/pretty-lights.jpg);}
+#track3 {background-image:url(../images/city.jpg);color:#fff;}
+#track4 {background-image:url(../images/old-man.jpg);color:#fff;}
+#track5 {background-image:url(../images/brown-lake.jpg);}
+#track6 {background-image:url(../images/toy-store.jpg);}
+#track7 {background-image:url(../images/city-sleeps.jpg);}
+#track8 {background-image:url(../images/santa-ladies.jpg);}
+#track9 {background-image: url(../images/child-of-christmas.jpg);color:#fff;}
+#track10 {background-image:url(../images/green.jpg);color:#fff;}
+#track11 {background-image: url(../images/lights.jpg);color:#fff;}
