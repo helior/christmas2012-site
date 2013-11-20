@@ -135,12 +135,9 @@ nav ul li.active{
 
 nav ul li a {
 	display:block;
-	padding-top:11px;
-	padding-right:15px;
-	padding-bottom:11px;
-	padding-left:15px;
+	padding: 12px 3px ;
 	font-family:'Conv_FuturaStd-Medium',Sans-Serif;
-	letter-spacing:2pt;
+	letter-spacing:1pt;
 	text-decoration:none;
 	color:#000;
 }

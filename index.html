@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="christmasApp">
   <head>
     <title>Christmas 2013 - </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,42 +14,16 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
     <![endif]-->
 	</head>
-	<body>
+	<body ng-controller="christmasAudioController">
 		<header class="site-header">
 	    <div class="span4 logo">
 	    	<img alt="logo" src="images/logo.png">
 	    	<img id="navicon" alt="navicon" class="icon-align-justify visible-mobile" src="images/naviconsmobile.png">
 	    </div>
 
-	    <nav class="span20 pull-right text-right hidden-mobile">
-	    	<ul id="nav">
-					<li><a href="#track1">Track 1</a></li>
-					<li><a href="#track2">Track 2</a></li>
-					<li><a href="#track3">Track 3</a></li>
-					<li><a href="#track4">Track 4</a></li>
-					<li><a href="#track5">Track 5</a></li>
-					<li><a href="#track6">Track 6</a></li>
-					<li><a href="#track7">Track 7</a></li>
-					<li><a href="#track8">Track 8</a></li>
-					<li><a href="#track9">Track 9</a></li>
-					<li><a href="#track10">Track 10</a></li>
-					<li><a href="#track11">Track 11</a></li>
-	     	</ul>
-	    </nav>
-
 	    <nav class="span14 pull-right text-right visible-mobile mobilenav">
 	     	<ul id="nav2">
-					<li><a href="#track1">Track 1</a></li>
-					<li><a href="#track2">Track 2</a></li>
-					<li><a href="#track3">Track 3</a></li>
-					<li><a href="#track4">Track 4</a></li>
-					<li><a href="#track5">Track 5</a></li>
-					<li><a href="#track6">Track 6</a></li>
-					<li><a href="#track7">Track 7</a></li>
-					<li><a href="#track8">Track 8</a></li>
-					<li><a href="#track9">Track 9</a></li>
-					<li><a href="#track10">Track 10</a></li>
-					<li><a href="#track11">Track 11</a></li>
+	     		<li ng-repeat="track in playlist"><a href="#track{{$index+1}}">{{track.title}}</a></li>
 	     	</ul>
 			</nav>
 		</header>
