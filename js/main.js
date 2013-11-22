@@ -5,13 +5,15 @@ var christmasApp = angular.module('christmasApp', ['audioPlayer']);
 christmasApp.constant('playlist', [
     {
       'title': 'Carol of the Bells',
+      'artist': 'The def star',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/carol-of-the-bells.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'Tea Time Poetry — Christmas Special Pt. 1',
+      'title': 'Christmas Special Pt. 1',
+      'artist': 'Tea Time Poetry',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/christmas-special-1.mp3',
@@ -19,13 +21,15 @@ christmasApp.constant('playlist', [
     },
     {
       'title': 'Commercial Break: Chief Running Buffalo Used Cars & Trees',
+      'artist': 'Chief Running Buffalo',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/chief-running-buffalo-used-cars-trees.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'Tea Time Poetry — Christmas Special Pt. 2',
+      'title': 'Christmas Special Pt. 2',
+      'artist': 'Tea Time Poetry',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/christmas-special-2.mp3',
@@ -33,27 +37,31 @@ christmasApp.constant('playlist', [
     },
     {
       'title': 'Rudolf The Red Nose Raindeer',
+      'artist': 'The def star',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/rudolf-the-red-nose-raindeer.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'All in One - Christmas Greeting',
+      'title': 'Christmas Greeting',
+      'artist': 'All in One',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/christmas-greeting.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'All in One - Baby Christmas Baby',
+      'title': 'Baby Christmas Baby',
+      'artist': 'All in One',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/baby-christmas-baby.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'TH...G - Black Friday',
+      'title': 'Black Friday',
+      'artist': 'Turquoise Hippopotamus ... Giraffe!',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/black-friday.mp3',
@@ -61,20 +69,23 @@ christmasApp.constant('playlist', [
     },
     {
       'title': 'Commercial Break: Crazy Ivanoff Vodka Milk Eggnog',
+      'artist': 'Crazy Ivanoff',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/crazy-ivanoff-vodka-milk-eggnog.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'Helior Colorado - California Christmas',
+      'title': 'California Christmas',
+      'artist': 'Helior Colorado',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/california-christmas.mp3',
       'type': 'audio/mpeg'
     },
     {
-      'title': 'The Guys - Frosty The Snow Man (Drunk Mix)',
+      'title': 'Frosty The Snow Man (Drunk Mix)',
+      'artist': 'The Guys',
       'image': 'path/to/file.jpg',
       'parallax': true,
       'src': 'files/frosty-the-snowman.mp3',
@@ -92,6 +103,9 @@ christmasApp.controller('christmasAudioController', function($scope,playlist) {
           title: song.title
       };
   });
+  $scope.isActive = function (value) {
+    return $scope.audioPlayer.playing && $scope.audioPlayer.currentTrack-1 === value;
+  }
 });
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="christmasApp">
   <head>
-    <title>Christmas 2013 - </title>
+    <title>Christmas Album 2012</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta charset="utf-8">
@@ -27,9 +27,6 @@
 				</ul>
 			</nav>
 		</header>
-
-		<div class="spacer180"></div>
-
 
 		<!-- <div class="hidden-mobile" id="video_background">
 		    <video autoplay loop preload="auto">
@@ -62,10 +59,18 @@
 
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
 
-		<div class="track" ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: audioPlayer.playing && audioPlayer.currentTrack-1 === $index}">
-			<div class="spacer30"></div>
-			<h2 ng-click="audioPlayer.playPause($index)">{{track.title}}</h2>
-			<div class="spacer30"></div>
+		<div class="track" ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: isActive($index)}" ng-click="audioPlayer.playPause($index)">
+			<div class="track-inner">
+				<div class="track-info-box">
+					<div class="play-status">
+						<i class="fa" ng-class="{ 'fa-pause': audioPlayer.playing && isActive($index), 'fa-play': !isActive($index) }"></i>
+					</div>
+					<div class="track-info">
+						<h2>{{track.title}}</h2>
+						<span class="by">Performed by:</span>
+						<em class="artist">{{track.artist}}</em>
+				</div>
+			</div>
 		</div>
 
 
