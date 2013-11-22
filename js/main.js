@@ -8,7 +8,7 @@ christmasApp.constant('playlist', [
       'artist': 'The def star',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/carol-of-the-bells.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/carol-of-the-bells.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -16,7 +16,7 @@ christmasApp.constant('playlist', [
       'artist': 'Tea Time Poetry',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/christmas-special-1.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/christmas-special-1.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -24,7 +24,7 @@ christmasApp.constant('playlist', [
       'artist': 'Chief Running Buffalo',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/chief-running-buffalo-used-cars-trees.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/chief-running-buffalo-used-cars-trees.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -32,7 +32,7 @@ christmasApp.constant('playlist', [
       'artist': 'Tea Time Poetry',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/christmas-special-2.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/christmas-special-2.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -40,7 +40,7 @@ christmasApp.constant('playlist', [
       'artist': 'The def star',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/rudolf-the-red-nose-raindeer.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/rudolf-the-red-nose-raindeer.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -48,7 +48,7 @@ christmasApp.constant('playlist', [
       'artist': 'All in One',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/christmas-greeting.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/christmas-greeting.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -56,7 +56,7 @@ christmasApp.constant('playlist', [
       'artist': 'All in One',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/baby-christmas-baby.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/baby-christmas-baby.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -64,7 +64,7 @@ christmasApp.constant('playlist', [
       'artist': 'Turquoise Hippopotamus ... Giraffe!',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/black-friday.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/black-friday.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -72,7 +72,7 @@ christmasApp.constant('playlist', [
       'artist': 'Crazy Ivanoff',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/crazy-ivanoff-vodka-milk-eggnog.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/crazy-ivanoff-vodka-milk-eggnog.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -80,7 +80,7 @@ christmasApp.constant('playlist', [
       'artist': 'Helior Colorado',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/california-christmas.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/california-christmas.mp3',
       'type': 'audio/mpeg'
     },
     {
@@ -88,7 +88,7 @@ christmasApp.constant('playlist', [
       'artist': 'The Guys',
       'image': 'path/to/file.jpg',
       'parallax': true,
-      'src': 'files/frosty-the-snowman.mp3',
+      'src': 'http://static.dayofthedeadstudios.com/christmas2012/frosty-the-snowman.mp3',
       'type': 'audio/mpeg'
     },
 ]);
