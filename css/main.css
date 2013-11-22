@@ -32,7 +32,6 @@
 	font-style: normal;
 }
 
-
 .start{
 	height:100%;
 	display:block;
@@ -68,8 +67,8 @@ h1{
 h2{
 	font-family:'Conv_FuturaStd-Light',Sans-Serif;
 	font-size:1.5em;
-	line-height:1.5em;
-	letter-spacing:4pt;
+	line-height:1.4em;
+	letter-spacing:2pt;
 	font-weight: normal;
 	text-transform:uppercase;
 
@@ -97,6 +96,23 @@ h4{
 	margin-top:10px;
 }
 
+.by {
+	font-family:'Conv_FuturaStd-Light',Sans-Serif;
+	font-size:0.9em;
+	font-style: italic;
+	display:inline-block;
+	margin-top:15px;
+	margin-bottom:4px;
+}
+
+.artist {
+	font-family:'Conv_FuturaStd-Light',Sans-Serif;
+	font-size:1.3em;
+	font-style:normal;
+	letter-spacing:1pt;
+	display:block;
+}
+
 p{
 	text-transform:uppercase;
 	font-family:'Conv_FuturaStd-Light',Sans-Serif;
@@ -106,6 +122,15 @@ p{
 	margin-bottom:1.5em;
 }
 
+@media (max-width: 480px){
+	h2 {
+		font-size:1em;
+		letter-spacing:1pt;
+	}
+	.artist {
+		font-size:1em;
+	}
+}
 .site-header {
 	-webkit-transform: translateZ(0); /*Trick GPU to tap into 3D acceleration*/
 	position:fixed;
@@ -144,10 +169,6 @@ nav ul li a {
 
 .logo{
 	padding-left:45px;
-	margin-top:15px;
-}
-.logo p{
-	font-size:36px;
 }
 
 #video_background, #video_background video {
@@ -174,7 +195,7 @@ nav ul li a {
 }
 
 .logo img{
-	height: 60px;
+	height: 30px;
 }
 
 .footer{
@@ -265,6 +286,8 @@ nav ul li a {
 	height:500px;
 	background-position:center center;
 	background-size: cover;
+	position:relative;
+	cursor:pointer;
 }
 
 .track-inner {
@@ -273,7 +296,7 @@ nav ul li a {
 	-moz-transition: background-color 0.5s ease;
 	-o-transition: background-color 0.5s ease;
 	transition: background-color 0.5s ease;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.5);
 }
 
 .track-inner:hover {
@@ -284,6 +307,38 @@ nav ul li a {
 	background-color: rgba(0,0,0,0);
 }
 
+.track .track-info-box {
+	width:500px;
+	max-width:80%;
+	height:175px;
+	bottom:10px;
+	right:10px;
+	position:absolute;
+	background-color:rgba(0,0,0, 0.4);
+	border-radius:10px;
+	padding:15px;
+	color:#fff;
+}
+
+.track .play-status{
+	float:left;
+	height:100%;
+	width:80px;
+	padding-top:30px;
+}
+.play-status i {
+	font-size:6em;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	opacity:0.15;
+}
+.track.active .play-status i,
+.track:hover .play-status i {
+	opacity:1;
+}
+
 @media (max-width:979px) {
 	.track {
 		height:350px;
@@ -292,12 +347,12 @@ nav ul li a {
 
 #track1 {background-image:url(../images/mexican-parade.jpg);}
 #track2 {background-image:url(../images/pretty-lights.jpg);}
-#track3 {background-image:url(../images/city.jpg);color:#fff;}
-#track4 {background-image:url(../images/old-man.jpg);color:#fff;}
+#track3 {background-image:url(../images/city.jpg);}
+#track4 {background-image:url(../images/old-man.jpg);}
 #track5 {background-image:url(../images/brown-lake.jpg);}
 #track6 {background-image:url(../images/toy-store.jpg);}
 #track7 {background-image:url(../images/city-sleeps.jpg);}
 #track8 {background-image:url(../images/santa-ladies.jpg);}
-#track9 {background-image: url(../images/child-of-christmas.jpg);color:#fff;}
-#track10 {background-image:url(../images/green.jpg);color:#fff;}
-#track11 {background-image: url(../images/lights.jpg);color:#fff;}
+#track9 {background-image: url(../images/child-of-christmas.jpg);}
+#track10 {background-image:url(../images/green.jpg);}
+#track11 {background-image: url(../images/lights.jpg);}
