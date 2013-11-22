@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta charset="utf-8">
     <meta name="keywords" content="">
-    <meta name="description" content="Christmas 2013 is a collection of songs, skits, and mixes – made with love for our friends.">
+    <meta name="description" content="Christmas 2012 is a collection of songs, skits, and mixes – made with love for our friends.">
 
 		<link href="style.css" rel="stylesheet" media="screen">
 
@@ -28,35 +28,6 @@
 			</nav>
 		</header>
 
-		<!-- <div class="hidden-mobile" id="video_background">
-		    <video autoplay loop preload="auto">
-		    <source src="assets/san-francisco.mp4" type="video/mp4">
-		    <source src="assets/san-francisco.webm" type="video/webm">
-		    <source src="assets/san-francisco.ogv" type="video/ogg">
-		    Video not
-		    supported</video>
-
-		    <div class="spacer90"></div>
-
-		    <div class="spacer180"></div>
-
-		    <div class="row">
-		      <div class="span12 offset6 text-center slogan">
-		      	<img alt="v_logo" src="images/logo.png">
-		      </div>
-
-		      <div class="span14 offset5 text-center slogan" style= "margin-top:50px;">
-		        <h1 style="color:#fff">This is our Christmas Album of 2013, made with extra ♥ for our friends and family.</h1>
-		      </div>
-	    	</div>
-
-	    	<div class="spacer90"></div>
-	  	</div>
-
-		<div class="wrapper start hidden-mobile">
-			<div class="row"></div>
-		</div> -->
-
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
 
 		<div class="track" ng-repeat="track in playlist" id="track{{$index+1}}" ng-class="{parallax: track.parallax, active: isActive($index)}" ng-click="audioPlayer.playPause($index)">
@@ -69,20 +40,20 @@
 						<h2>{{track.title}}</h2>
 						<span class="by">Performed by:</span>
 						<em class="artist">{{track.artist}}</em>
+					</div>
 				</div>
 			</div>
 		</div>
 
-
+		<div id="footer">
+			<p>Copyright &copy; 2004 - 2012 <a href="http://dayofthedeadstudios.com/">Day of the Dead Studios</a></p>
+		</div>
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"></script>
 		<script src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 		<script type="text/javascript" src="bower_components/angular-audio-playlist/dist/angular-audio-player.min.js"></script>
-		<!-- <script type="text/javascript" src="bower_components/jquery.stellar/src/jquery.stellar.js"></script> -->
-		<!-- <script type="text/javascript" src="bower_components/angularjs-stellar/js/stellar.directives.js"></script> -->
-		<!-- <script src="js/jquery.fitvids.js"></script> -->
 		<script src="js/main.js"></script>
 	</body>
 </html>
