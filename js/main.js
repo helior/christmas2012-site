@@ -96,15 +96,25 @@ christmasApp.constant('playlist', [
 christmasApp.controller('christmasAudioController', function($scope,playlist) {
   $scope.playlist = playlist;
   $scope.audioPlaylist = playlist.map(function(song, index, array) {
-      return {
-          src: song.src,
-          type: song.type,
-          artist: "The Christmas Time Band",
-          title: song.title
-      };
+    return {
+      src: song.src,
+      type: song.type,
+      artist: "The Christmas Time Band",
+      title: song.title
+    };
   });
+
   $scope.isActive = function (value) {
     return $scope.audioPlayer.playing && $scope.audioPlayer.currentTrack-1 === value;
+  }
+
+  $scope.currentTrackTitle = function () {
+    if (typeof $scope.audioPlayer != "undefined" && $scope.audioPlayer.playing) {
+      return $scope.playlist[$scope.audioPlayer.currentTrack-1].title;
+    }
+    else {
+      return "2012 Christmas Album"
+    }
   }
 });
 
