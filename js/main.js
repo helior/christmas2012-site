@@ -139,7 +139,7 @@ $(function() {
     var scrollTop = $(window).scrollTop();
     var minusscrollTop = ($(window).scrollTop() * -1);
 
-    if ($(document).width() >= 500) {
+    if ($(document).width() >= 768) {
       $('#video_background').css('transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
       $('#video_background').css('-ms-transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
       $('#video_background').css('-webkit-transform', 'translate(0px,' + (minusscrollTop) * 0.3 + 'px)');
