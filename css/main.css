@@ -193,7 +193,7 @@ nav ul li a {
 }
 
 .logo img{
-	height: 30px;
+	height: 22px;
 }
 
 #footer{
@@ -279,6 +279,13 @@ nav ul li a {
 
 @media (min-width: 480px) and (max-width: 1070px){}
 
+#intro {
+	text-align:center;
+	padding:100px 0;
+}
+#intro img {
+	max-width: 100%;
+}
 
 .track {
 	height:500px;
