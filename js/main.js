@@ -113,7 +113,7 @@ christmasApp.controller('christmasAudioController', function($scope,playlist) {
       return $scope.playlist[$scope.audioPlayer.currentTrack-1].title;
     }
     else {
-      return "2012 Christmas Album"
+      return "White Christmas For All The Good Girls"
     }
   }
 });
