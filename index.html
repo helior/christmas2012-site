@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html ng-app="christmasApp" ng-controller="christmasAudioController">
+<html ng-app="christmasApp" ng-controller="christmasAudioController" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
-    <title ng-bind="currentTrackTitle()">2012 Christmas Album</title>
+    <title ng-bind="currentTrackTitle()">White Christmas For All The Good Girls</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="keywords" content="" />
-    <meta name="description" content="Christmas 2012 is a collection of songs, skits, and mixes – made with love for our friends." />
+    <meta name="description" content="A collection of songs, skits, and mixes – made with love for our friends." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="white" />
 		<meta name="apple-mobile-web-app-title" content="White Christmas" />
+		<meta property="og:title" content="White Christmas For All The Good Girls" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://whitechristmas.dayofthedeadstudios.com" />
+		<meta property="og:site_name" content="White Christmas For All The Good Girls" />
+		<meta property="og:image" content="http://whitechristmas.dayofthedeadstudios.com/images/white-christmas.jpg" />
+		<meta property="og:description" content="A collection of songs, skits, and mixes – made with love for our friends." />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon-precomposed" href="images/touch-icon.png" />
@@ -28,7 +34,6 @@
 	    	<img alt="logo" src="images/logo-icon.png">
 	    	<img id="navicon" alt="navicon" class="icon-align-justify visible-mobile" src="images/naviconsmobile.png">
 	    </div>
-
 	    <nav class="span14 pull-right text-right visible-mobile mobilenav">
 				<ul id="nav">
 					<li ng-repeat="track in playlist"><a href="#track{{$index+1}}" ng-click="audioPlayer.playPause($index)">{{track.title}}</a></li>
@@ -37,7 +42,13 @@
 		</header>
 
 		<div id="intro">
-			<img alt="The def star presents... White Christmas For All The Good Girls" src="images/logo.png" />
+			<div class="center-div">
+				<img alt="The def star presents... White Christmas For All The Good Girls" src="images/logo.png" />
+			</div>
+			<div class="center-div">
+				<div class="spacer30"></div>
+				<fb:like href="http://whitechristmas.dayofthedeadstudios.com/" action="like" layout="button_count" show_faces="false" share="true"></fb:like>
+			</div>
 		</div>
 
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
@@ -59,7 +70,6 @@
 
 		<div id="footer">
 			<p>Copyright &copy; 2004 - 2012 <a href="http://dayofthedeadstudios.com/">Day of the Dead Studios</a></p>
-			<div class="fb-like" data-href="http://christmas2012.dayofthedeadstudios.com" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
