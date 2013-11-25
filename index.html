@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="christmasApp" ng-controller="christmasAudioController">
+<html ng-app="christmasApp" ng-controller="christmasAudioController" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <title ng-bind="currentTrackTitle()">White Christmas For All The Good Girls</title>
     <meta charset="utf-8" />
@@ -28,7 +28,6 @@
 	    	<img alt="logo" src="images/logo-icon.png">
 	    	<img id="navicon" alt="navicon" class="icon-align-justify visible-mobile" src="images/naviconsmobile.png">
 	    </div>
-
 	    <nav class="span14 pull-right text-right visible-mobile mobilenav">
 				<ul id="nav">
 					<li ng-repeat="track in playlist"><a href="#track{{$index+1}}" ng-click="audioPlayer.playPause($index)">{{track.title}}</a></li>
@@ -37,7 +36,13 @@
 		</header>
 
 		<div id="intro">
-			<img alt="The def star presents... White Christmas For All The Good Girls" src="images/logo.png" />
+			<div class="center-div">
+				<img alt="The def star presents... White Christmas For All The Good Girls" src="images/logo.png" />
+			</div>
+			<div class="center-div">
+				<div class="spacer30"></div>
+				<fb:like href="http://whitechristmas.dayofthedeadstudios.com/" action="like" layout="button_count" show_faces="false" share="true"></fb:like>
+			</div>
 		</div>
 
 		<audio player-control="audioPlayer" playlist="audioPlaylist" audio-player></audio>
@@ -59,7 +64,6 @@
 
 		<div id="footer">
 			<p>Copyright &copy; 2004 - 2012 <a href="http://dayofthedeadstudios.com/">Day of the Dead Studios</a></p>
-			<div class="fb-like" data-href="http://christmas2012.dayofthedeadstudios.com" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
